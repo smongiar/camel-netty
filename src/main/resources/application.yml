@@ -1,0 +1,18 @@
+spring:
+  main:
+    sources: com.redhat.camelProxy
+
+management:
+  port: 8081
+
+server:
+  port: -1
+
+camel:
+  springboot:
+    # The Camel context name
+    name: CamelNetty
+    main-run-controller: true
+
+logging:
+  config: "classpath:logback.xml"
